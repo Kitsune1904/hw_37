@@ -43,7 +43,13 @@ function App() {
   );
 
   const changeTitle = () => {
-    setTitle(inputTitle.current.value);
+    const inputVal = inputTitle.current.value
+    if (inputVal.trim() !== "") {
+      setTitle(inputVal);
+    } else {
+      alert("Fild can`t be empty");
+    }
+    
     inputTitle.current.value = ''
   }
   console.log(notesArr)

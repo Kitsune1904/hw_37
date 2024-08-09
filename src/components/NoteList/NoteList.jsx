@@ -14,7 +14,7 @@ export default class NoteList extends React.Component {
     this.#title = storedTitle;
   }
 
-  clearText(text) {
+  #clearText(text) {
     return text.replace(/[0-9\s]/g, '');
   }
 
@@ -23,7 +23,7 @@ export default class NoteList extends React.Component {
   }
 
   set title(text) {
-    this.#title = this.clearText(text);
+    this.#title = this.#clearText(text);
     localStorage.setItem('title', this.#title);
     this.setState({ title: this.#title });
   }
@@ -37,7 +37,7 @@ export default class NoteList extends React.Component {
   render() {
     return (
       <div className={classes.notesListHolder}>
-        <h2>{this.#title}</h2>
+        <h2>{this.title}</h2>
         <ul>{this.props.children}</ul>
       </div>
     );
