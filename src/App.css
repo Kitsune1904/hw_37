@@ -1,0 +1,24 @@
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.inputHolder {
+  padding: 5px;
+}
+
+.inputHolder > input {
+  padding: 5px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+
