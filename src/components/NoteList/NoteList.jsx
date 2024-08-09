@@ -2,7 +2,7 @@ import classes from './NoteList.module.css'
 import React from "react";
 
 
-export default class NodeList extends React.Component {
+export default class NoteList extends React.Component {
   #title;
 
   constructor(props) {
