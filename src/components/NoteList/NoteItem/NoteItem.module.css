@@ -1,4 +1,4 @@
-li {
+.item {
   text-transform: capitalize;
   display: flex;
   justify-content: space-between;
@@ -8,14 +8,14 @@ li {
   border-radius: 5px;
 }
 
-li > button {
+.item > button {
   background-color: rgb(134, 34, 34);
   border: none;
   border-radius: 5px;
 }
 
 
-li > button:hover {
+.item > button:hover {
   background-color: rgb(189, 0, 0);
   transition: 0.5s;
 }
